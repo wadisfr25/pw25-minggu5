@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LomboKost - Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Lombo<span>Kost.</span></a>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html">Tentang Kami</a>
+        <a href="contact.html">Kontak</a>
+        <a href="register.html">Daftar</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2><span>Kontak Kami</span></h2>
+      <form id="contact-form" action="#" method="post">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required />
+        <span id="name-error" class="error-message"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <span id="email-error" class="error-message"></span>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span id="message-error" class="error-message"></span>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

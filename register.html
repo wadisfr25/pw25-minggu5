@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LomboKost - Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Lombo<span>Kost.</span></a>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html">Tentang Kami</a>
+        <a href="contact.html">Kontak</a>
+        <a href="register.html">Daftar</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Form Pendaftaran -->
+    <section class="contact">
+      <h2>Daftar Akun</h2>
+      <form id="register-form" action="#" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <span id="username-error" class="error-message"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <span id="email-error" class="error-message"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <span id="password-error" class="error-message"></span>
+
+        <button type="submit">Daftar</button>
+      </form>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
